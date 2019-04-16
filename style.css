@@ -1,0 +1,438 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+header {
+    width: 100%;
+    background: #000;
+    display: flex;
+}
+
+.header_logo {
+    color: #fff;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    margin-top: 56px;
+    margin-left: 181px;
+}
+
+/* Навигация по сайту (Все возможные ссылки) */
+
+nav{
+    margin-top: 56px;
+    margin-left: 440px;
+}
+
+/* Для адаптивного меню */
+
+.topnav a {
+    text-align: center;
+    padding: 12px 16px;
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    
+}
+
+/* Для подчеркивающего эффекта */
+
+.topnav a:hover {
+    border-bottom: 3px solid #fcac45;
+}
+
+/* Чтобы убрать "бургер меню" (три полоски) &#9776 */
+
+.topnav .icon {
+    display: none;
+}
+
+
+
+/*+----------------+*/
+/*| 3 УРОК - БЛОКИ |*/
+/*+----------------+*/
+
+
+
+main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+main .main_welcome {
+    background: #000;
+    text-align: center;
+    padding: 200px 0 410px 0;
+}
+
+main .main_welcome h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 44px;
+    font-weight: lighter;
+    color: #999999;
+}
+
+main .main_welcome h1 span {
+    color: #fcac45;
+    font-weight: bold;
+}
+
+main .main_welcome p {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 20px;
+    color: #d5d5d5;
+}
+
+main .main_welcome p span {
+    color: #d5d5d5;
+    font-weight: bold;
+}
+
+
+/*+----------------+*/
+/*|     БЛОК 2     |*/
+/*+----------------+*/
+
+
+main .wrapper {
+    width: 76%;
+    margin: 0 auto;
+}
+
+main .about_main {
+    display: flex;
+    padding: 100px 0 100px 0;
+}
+
+main .about_right {
+    margin-left: 175px;
+}
+
+main .about_right h1 {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 34px;
+    display: inline-block;
+    border-bottom: 3px solid #fcac45;
+    padding-bottom: 20px;
+}
+
+main .about_right h1 span {
+    font-weight: bold;
+}
+
+main .about_right p {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: normal;
+    font-size: 18px;
+    color: #999999;
+    margin: 30px 0 50px 0;
+}
+
+main .about_right li  {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px; 
+    background: url(img/mark.png) 0px no-repeat;
+    padding-left: 25px;
+    margin-top: 10px;
+    color: #999999;
+}
+
+main .about_right ul li span {
+    font-weight: 300;
+}
+
+
+/*+----------------+*/
+/*|     БЛОК 3     |*/
+/*+----------------+*/
+
+
+.main_team {
+    background: #000;
+    color: #fff;
+    text-align: center;
+    padding: 100px 0 165px 0;
+}
+
+.main_team h1 {
+    font-size: 44px;
+    padding-bottom: 30px;
+    margin-bottom: 85px;
+}
+
+.poloska {
+    width: 100%;
+    height: 3px;
+    background: #fcac45;
+    position: relative;
+    margin-bottom: 85px;
+}
+
+.photo {
+    background: #d7d7d7;
+    width: 125px;
+    height: 125px;
+    border-radius: 50%;
+    margin: 24px auto;
+}
+
+.team_cards {
+    display: flex;
+}
+
+.card {
+    margin: 0 20px 0 20px;
+}
+
+.name {
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 8px;
+}
+
+.position {
+    font-size: 16px;
+    margin-bottom: 35px;
+}
+
+.about_position {
+    font-size: 14px;
+}
+
+
+/*+----------------+*/
+/*|     БЛОК 3     |*/
+/*+----------------+*/
+
+
+.services_cards {
+    text-align: center;
+    display: grid;
+    grid-template-columns: auto auto auto auto; /* Для того чтобы отцентровать наши 4 колонки и сделать их красивыми */
+    grid-column-gap: 20px; /* Создает растояние между нашими колонами */ 
+}
+.main_services h1 {
+    text-align: center;
+    padding: 100px 0 30px 0;
+    font-size: 44px;
+}
+.main_services p {
+    color: #6c6c6c;
+    margin-bottom: 100px;
+}
+.services_card h4 {
+    margin-top: 30px;
+}
+.services_card p {
+    margin-top: 20px;
+}
+
+
+/*+----------------+*/
+/*|     БЛОК 4     |*/
+/*+----------------+*/
+
+
+.our_client {
+    background: #000;
+}
+.our_client h1 {
+    color: #fff;
+    font-weight: 100;
+    text-align: center;
+    padding: 100px 0 150px 0;
+    font-size: 44px;
+    font-weight: 100;
+}
+.our_client h1 span {
+    font-weight: bold;
+}
+.our_client .img1 {
+    margin-left: 275px;
+    margin-right: 30px;
+    margin-bottom: 210px;
+}
+.our_client .img2 {
+    margin-right: 30px;
+    margin-bottom: 210px;
+}
+.our_client .img3 {
+    margin-right: 30px;
+    margin-bottom: 210px;
+}
+.our_client .img4 {
+    margin-right: 30px;
+    margin-bottom: 210px;
+}
+.our_client .img5 {
+    margin-right: 30px;
+    margin-bottom: 210px;
+}
+
+
+/*+----------------+*/
+/*|     БЛОК 5     |*/
+/*+----------------+*/
+
+.portfolio {
+   padding: 100px 0 100px 0; 
+   text-align: center;
+}
+.portfolio h1 {
+    font-size: 44px;
+    font-weight: 100;
+    padding: 0 0 90px 0;
+}
+.portfolio h1 span {
+    font-weight: bold;
+}
+.portfolio p {
+    text-align: center;
+    font-size: 16px;
+    color: #858585;
+    font-weight: italic;
+    margin-bottom: 175px;
+}
+.portfolio img:hover {
+    opacity: 0.9;
+}
+
+
+/*+--------------------------------+*/
+/*|     БЛОК 6(обратная связь)     |*/
+/*+--------------------------------+*/
+
+/*
+.contact_wrapper {
+    width: 753px;
+    margin: 0 auto;
+    color: #636363;
+}
+.red {
+    color: #db0000;
+}
+.form_input {
+    display: flex;
+}
+input {
+    width: 360px;
+    height: 40px;
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+textarea {
+    width: 100%;
+    height: 163px;
+}
+input, textarea {
+    border: 1px solid #999999;
+}
+*/
+footer {
+    background: #000;
+}
+footer h1 {
+    color: #fff;
+    font-size: 16px;
+    padding: 20px 0 20px 1300px;
+    font-weight: 100;
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+                                                /*ГАВНО ТУПОЕ ОЧЕНЬ СЛОЖНА ПАШОЛ НАХУЙ ПИТУХ*/
+
+/* Чтобы меню не уходило в сторону при 1200px */
+
+@media screen and (max-width: 1200px) {
+    nav{
+        margin-left: 20%;
+    }
+}
+
+/* Чтобы меню не уходило в сторону при 1105px */
+
+@media screen and (max-width: 1105px) {
+    nav{
+        margin-left: 10%;
+    }
+}
+
+/* Для медиа запросов (чтобы нормально отображался сайт как на ПК так и на телефоне). При экране меньше чем 1010px пропадает меню и появляется "бургер меню" */
+
+@media screen and (max-width: 1010px){
+    .topnav a{
+        display: none;
+    }
+    .topnav a.icon{
+        float: right;
+        margin-top: -17px;
+        display: block;
+        color: #fff;
+        font-size: 25px;
+    }
+    nav {
+        width: 100%;
+    }
+    .topnav.responsive {
+        position: relative;
+        top: 50px;
+        left: -200px;
+    }
+    /* При нажатии на "бургер кнопку" высота будет 340px */
+    header .topnav.responsive {
+        height: 340px;
+    }
+    .topnav.responsive a.icon {
+        position: absolute;
+        top: -50px;
+        left: -200px;
+    }
+    .topnav.responsive a{
+        float: none;
+        display: block;
+        text-align: left;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
